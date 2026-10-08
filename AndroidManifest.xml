@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="AI Academic Mentor"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Aiacademicmentor">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MentorActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".StudyPlannerActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CountdownActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PerformanceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".VoiceActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AdaptiveActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ExamPrepActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

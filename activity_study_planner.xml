@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9EF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/profile_circle"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="←"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:text="Study Planner 📚"
+                android:textColor="#292536"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Create a simple plan for your exam."
+            android:textColor="#777181"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etSubject"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/input_field"
+            android:hint="Subject"
+            android:padding="14dp"
+            android:textColor="#292536"
+            android:textColorHint="#9992A3" />
+
+        <EditText
+            android:id="@+id/etExamDate"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_field"
+            android:hint="Exam date"
+            android:padding="14dp"
+            android:textColor="#292536"
+            android:textColorHint="#9992A3" />
+
+        <EditText
+            android:id="@+id/etStudyHours"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_field"
+            android:hint="Study hours per day"
+            android:inputType="number"
+            android:padding="14dp"
+            android:textColor="#292536"
+            android:textColorHint="#9992A3" />
+
+        <EditText
+            android:id="@+id/etWeakTopic"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_field"
+            android:hint="Weak topic"
+            android:padding="14dp"
+            android:textColor="#292536"
+            android:textColorHint="#9992A3" />
+
+        <Button
+            android:id="@+id/btnGeneratePlan"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/primary_button"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="Generate Study Plan ✨"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/action_card_yellow"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tvStudyPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your study plan will appear here."
+                android:textColor="#292536"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

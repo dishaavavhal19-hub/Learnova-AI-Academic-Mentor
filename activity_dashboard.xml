@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="30dp">
+
+        <!-- ==================== HEADER ==================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello, Student! 👋"
+                    android:textColor="#292536"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Ready to learn something new?"
+                    android:textColor="#777181"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="#EEE7FF"
+                android:gravity="center"
+                android:text="🎓"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <!-- ==================== WELCOME CARD ==================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#FFFDE7"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Personal Academic Mentor ✨"
+                android:textColor="#000000"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Study smarter, practice better and stay on track with your academic journey."
+                android:textColor="@color/text_dark"
+                android:textColorLink="@color/text_dark"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- ==================== SECTION TITLE ==================== -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Learning Tools 📚"
+            android:textColor="#292536"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- ==================== ROW 1 ==================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <!-- MENTOR -->
+            <LinearLayout
+                android:id="@+id/btnMentor"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#F0E9FF"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎓"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="AI Mentor"
+                    android:textColor="#292536"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="Ask questions"
+                    android:textColor="#777181"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- QUIZ -->
+            <LinearLayout
+                android:id="@+id/btnQuiz"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="#EAF4FF"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📝"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Quick Quiz"
+                    android:textColor="#292536"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="Test yourself"
+                    android:textColor="#777181"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ==================== ROW 2 ==================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <!-- STUDY PLANNER -->
+            <LinearLayout
+                android:id="@+id/btnPlanner"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#EAF9F1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📚"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Study Planner"
+                    android:textColor="#292536"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="Plan your days"
+                    android:textColor="#777181"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- COUNTDOWN -->
+            <LinearLayout
+                android:id="@+id/btnCountdown"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="#FFF7E4"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⏳"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Exam Countdown"
+                    android:textColor="#292536"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="Track your exam"
+                    android:textColor="#777181"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ==================== ROW 3 ==================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <!-- PERFORMANCE -->
+            <LinearLayout
+                android:id="@+id/btnPerformance"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#F2EDFF"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📊"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Performance"
+                    android:textColor="#292536"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="See your progress"
+                    android:textColor="#777181"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- VOICE -->
+            <LinearLayout
+                android:id="@+id/btnVoice"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="#E8F8FA"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎙️"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Voice Mentor"
+                    android:textColor="#292536"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="Ask by voice"
+                    android:textColor="#777181"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ==================== ROW 4 ==================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <!-- ADAPTIVE -->
+            <LinearLayout
+                android:id="@+id/btnAdaptive"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="#FFF0F4"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🧠"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Adaptive Learning"
+                    android:textColor="#292536"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="Learn at your level"
+                    android:textColor="#777181"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- EXAM PREP -->
+            <LinearLayout
+                android:id="@+id/btnExam"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="#FFF0F1"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎯"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Exam Preparation"
+                    android:textColor="#292536"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center"
+                    android:text="Prepare smarter"
+                    android:textColor="#777181"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ==================== MOTIVATION CARD ==================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="#EAF4FF"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="🌟 Keep going, you've got this!"
+                android:textColor="#292536"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="Small progress every day leads to big results."
+                android:textColor="#777181"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <!-- ==================== LOGOUT ==================== -->
+
+        <TextView
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFF0F1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="🚪  Logout"
+            android:textColor="#B04455"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- FOOTER -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="AI Academic Mentor • Learn smarter 🎓"
+            android:textColor="#9993A2"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>
